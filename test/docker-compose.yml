@@ -449,8 +449,8 @@ services:
       - "-c"
       - "/app/supernets2-node run --network custom --custom-network-file /app/genesis.json --cfg /app/config.toml --components \"rpc,synchronizer\""
 
-  supernets2-data-node-db:
-    container_name: supernets2-data-node-db
+  supernets2-data-availability-db:
+    container_name: supernets2-data-availability-db
     restart: unless-stopped
     image: postgres
     healthcheck:
